@@ -22,8 +22,6 @@ html, body {
 	position: fixed;
 	left: 0;
 	top: 0;
-
-	min-width: 200px;
 	z-index: 1;
 }
 
@@ -35,9 +33,9 @@ html, body {
 	position: fixed;
 	left: 0;
 	top: 0;
-
+	background-image: linear-gradient(55deg,rgb(228, 245, 72),rgb(146, 248, 255),rgb(253, 198, 198),skyblue);
 	box-sizing: border-box;
-	padding-left: 20%;
+	margin-left: 20%;
 }
 
 #soundcloud-player .main {
@@ -53,6 +51,8 @@ html, body {
 #soundcloud-player .input-search {
 	width: 100%;
 	display: block;
+	color:rgb(122, 153, 255);
+
 }
 
 #soundcloud-player .search.icon {
@@ -71,8 +71,9 @@ button.resetbtn{
 	padding: 7px 3px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 18px;
-	color: aqua;
-	background-color: black;
+	border:none;
+	color: rgb(253, 34, 34) ;
+	background-image: linear-gradient(45deg,rgb(195, 195, 255),rgb(162, 252, 162));
 	border-radius: 30px;
 }
 button.resetbtn:hover{
@@ -80,3 +81,105 @@ button.resetbtn:hover{
 	font-size: 19px;
 	box-shadow: -2px 0px 10px 2px rgba(255, 111, 111, 0.781);
 }
+
+@media only screen and (max-width: 375px) {
+	button.resetbtn{
+			box-shadow: -2px 0px 10px 2px rgba(255, 111, 111, 0.781);
+			width: 25%;
+			font-size: 12px;
+			border-radius: 5px;
+
+	}
+	button.resetbtn:hover{
+			box-shadow: -2px 0px 10px 2px rgba(255, 111, 111, 0.781);
+			width: 25%;
+			font-size: 12px;
+			border-radius: 5px;
+	}
+	#soundcloud-player .col-left {
+		width: 15%;
+		min-width: 150px;
+	}
+	#soundcloud-player .col-right .search-results .card{
+		width:60%;
+
+	}
+	#soundcloud-player .input{
+		margin-left: 18%;
+		width:75%;
+		color:hotpink
+	}
+
+	#soundcloud-player .input-search {
+		padding: 4px;
+	}
+
+}
+@media only screen and (min-width:375px) and (max-width: 425px) {
+	button.resetbtn{
+		box-shadow: -2px 0px 10px 2px rgba(255, 111, 111, 0.781);
+		width: 25%;
+		font-size: 14px;
+		border-radius: 5px;
+
+	}
+	button.resetbtn:hover{
+		box-shadow: -2px 0px 10px 2px rgba(255, 111, 111, 0.781);
+		width: 25%;
+		border: none;
+		font-size: 14px;
+		border-radius: 5px;
+}
+	#soundcloud-player .col-left {
+		width: 20%;
+		min-width: 150px;
+	}
+	#soundcloud-player .col-right .search-results .card{
+		width:60%;
+
+	}
+	#soundcloud-player .input{
+		margin-left: 10%;
+		width:79%;
+		color:hotpink
+	}
+
+
+	#soundcloud-player .input-search {
+		padding: 4px;
+		color:rgb(126, 155, 252);
+
+	}
+
+}
+
+@media only screen and (min-width:425px) and (max-width: 768px) {
+	button.resetbtn{
+		box-shadow: -2px 0px 10px 2px rgba(255, 111, 111, 0.781);
+		width: 25%;
+		font-size: 12px;
+		border-radius: 5px;
+
+	}
+	#soundcloud-player .col-left {
+		width: 20%;
+		min-width: 180px;
+	}
+	#soundcloud-player .col-right .search-results .card{
+		width:60%;
+
+	}
+	#soundcloud-player .input{
+		margin-left: 13%;
+		width:75%;
+		color:hotpink
+	}
+
+
+	#soundcloud-player .input-search {
+		padding: 4px;
+		color:rgb(126, 155, 252);
+
+	}
+}
+
